@@ -2,6 +2,11 @@ var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
 
+var express = require('express');
+var app = express();
+app.get('/', (req, res) => res.send('welcome to no bees website... it\'s a work in progress'))
+app.listen.listen(process.env.PORT || 5000);
+
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
