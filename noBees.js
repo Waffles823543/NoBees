@@ -5,7 +5,7 @@ var auth = require('./auth.json');
 var express = require('express');
 var app = express();
 app.get('/', (req, res) => res.send('welcome to no bees website... it\'s a work in progress'))
-app.listen.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000);
 
 // Configure logger settings
 logger.remove(logger.transports.Console);
